@@ -1,0 +1,36 @@
+.loading{
+    background: #020611;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.rocket{
+    width: 8.5rem;
+    position: absolute;
+    top: 35%;
+    left: 46%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    animation: bounce 0.5s infinite;;
+}
+.rocket img{
+    width: 100%;
+}
+@keyframes bounce {
+    0% {
+      transform: translate3d(0px, 0px, 0) rotate(45deg);
+    }
+    50% {
+      transform: translate3d(0px,-.5rem, 0) rotate(45deg);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0) rotate(45deg);
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .rocket{
+      left: 34%;
+    }
+  }
