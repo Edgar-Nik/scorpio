@@ -335,7 +335,7 @@ footer {
   font-size: 1.125rem;
 }
 .partners-logo {
-  width: 5.5rem;
+  width: 10rem;
   margin-right: 0.5rem;
 }
 .partners-logo > img {
@@ -1396,10 +1396,11 @@ footer {
     width: 100%;
   }
   .offer-logo{
-    width: 11rem;
+    width: 10rem;
+    margin-left: -1rem;
   }
   .what-we-offer-top-heading{
-    left: 9rem;
+    left: 8rem;
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -1468,10 +1469,19 @@ footer {
     width: .5rem;
     height: .5rem;
   }
+  .partners-logo {
+    width: 9rem;
+    margin-left: -1rem;
+    margin-right: 0;
+
+  }
+  .portfolio-planet{
+    width: 9rem;
+    margin-left: -1rem;
+    margin-right: 0;
+  }
 }
-.partners-logo {
-  width: 10rem;
-}
+
 
 .mobile-menu {
   position: relative;
