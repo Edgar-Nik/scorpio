@@ -17,4 +17,18 @@ window.addEventListener('scroll', () => {
         header.style.background='none'
 
     }
+   
 })
+document.querySelector("#menuBtn").onclick = function (){
+    if( document.querySelector(".menu-icon").classList.contains("menu-icon-active")){
+        header.style.background='none'
+    
+    }else{
+        if(window.scrollY< 1){
+            header.style.background='#020611'
+        }else if(window.scrollY> 1){
+            header.style.background='none'
+    
+        }
+    }
+}

@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 0.9vw;
+}
 .loading{
     background: #020611;
     width: 100vw;
@@ -5,32 +13,81 @@
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rocket{
-    width: 8.5rem;
+    width: 4rem;
     position: absolute;
-    top: 35%;
-    left: 46%;
-    transform: translate(-50%,-50%) rotate(45deg);
-    animation: bounce 0.5s infinite;;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+
+}
+.austr{
+  width: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  /* animation: bounceLoad 4s linear infinite; */
+
+
+}
+.rocket-block{
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+
+  animation: fly 6s linear infinite;
+
+}
+.austr>img{
+  width: 100%;
 }
 .rocket img{
     width: 100%;
 }
-@keyframes bounce {
-    0% {
-      transform: translate3d(0px, 0px, 0) rotate(45deg);
-    }
-    50% {
-      transform: translate3d(0px,-.5rem, 0) rotate(45deg);
-    }
-    100% {
-      transform: translate3d(0px, 0px, 0) rotate(45deg);
-    }
+@keyframes fly{
+  from {
+    -webkit-transform: rotate(0deg);
   }
-
-  @media screen and (max-width: 480px){
-    .rocket{
-      left: 34%;
-    }
+  to {
+    -webkit-transform: rotate(360deg) ;
   }
+}
+@keyframes bounceLoad {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+    -webkit-transform: translate3d(0px, 0px, 0);
+    -ms-transform: translate3d(0px, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0, -1rem, 0);
+    -webkit-transform:  translate3d(0, -1rem, 0);
+    -ms-transform:  translate3d(0, -1rem, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+    -webkit-transform: translate3d(0px, 0px, 0);
+    -ms-transform: translate3d(0px, 0px, 0);
+  }
+}
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 4.2vw;
+  }
+  .rocket{
+    width: 2rem;
+  }
+  .austr{
+    width: 2rem;
+  }
+  .rocket-block{
+    width: 12rem;
+    height: 12rem;
+  }
+}

@@ -27,6 +27,8 @@
   bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
 }
 .project-title-wrapper h1 {
   font-size: 3.8rem;
@@ -56,8 +58,8 @@
   margin-bottom: 3rem;
 }
 .prod-pic {
-  width: 39rem;
-  height: 39rem;
+  width: 44rem;
+  height: 44rem;
 }
 .prod-pic img {
   width: 100%;
@@ -65,16 +67,16 @@
 }
 .prod-descrip-text {
   width: 38rem;
-  margin-right: 8rem;
+  margin-right: 11rem;
 }
 .prod-descrip-text h1 {
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   margin-top: 6.25rem;
   margin-bottom: 2rem;
 }
 .prod-descrip-text p {
-  font-size: 1.15rem;
-  line-height: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   margin-bottom: 1rem;
 }
 .other-projects {
@@ -103,6 +105,8 @@
 }
 .backBtn:hover {
   transform: scaleX(0.7);
+  -webkit-transform: scaleX(0.7);
+  -ms-transform: scaleX(0.7);
 }
 .backBtn:hover img {
   filter: brightness(0) invert(1);
@@ -164,6 +168,8 @@
     left: 50%;
     width: 90%;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   }
   .product-description-text {
     display: none;
@@ -177,6 +183,8 @@
   .project-item:hover .project-title {
     top: 85%;
     transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
     color: #fff;
   }
   .project-item:hover .project-dark-bg {
