@@ -353,3 +353,18 @@ body {
     height: 1.5rem;
   }
 }
+
+.founder-block,
+.team-container,
+.what-we-offer{
+  transition: all .3s ease-in;
+}
+.active-menu .founder-block{
+  transform: scale(0.8);
+}
+.active-menu .team-container{
+  transform: scale(0.8);
+}
+.active-menu .what-we-offer{
+  transform: scale(0.8);
+}

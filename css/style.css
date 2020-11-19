@@ -1122,6 +1122,17 @@ footer {
 .offer-heading-mobile4{
   display: none;
 }
+.menu-bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  width: 80%;
+}
+.menu-bg>img{
+  width: 100%;
+}
 @media screen and (max-width: 480px) {
   :root {
     font-size: 4.2vw;
@@ -1555,8 +1566,49 @@ footer {
 .active-menu .logo-link {
   visibility: hidden;
 }
-.active-menu .top-container {
+/* .active-menu .top-container {
   transform: scale(0.8);
   -webkit-transform:  scale(0.8);
   -ms-transform: scale(0.8);
+} */
+.container{
+  transition: all .3s ease-in;
+}
+.active-menu .container{
+  transform: scale(0.8);
+}
+.menu-black1{
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  top:0;
+  left: 0;
+  transform: translateY(-130%);
+
+  transition: all 1s ease-in-out;
+  background: #000;
+z-index: 50;
+}
+.menu-black2{
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  bottom:0;
+  right: 0;
+  transform: translateY(130%);
+ 
+  transition: all 1s ease-in-out;
+  background: #000;
+  z-index: 50;
+
+}
+.active-menu .menu-black1{
+
+  transform: translateY(0);
+
+}
+.active-menu .menu-black2{
+ 
+  transform: translateY(0);
+
 }
