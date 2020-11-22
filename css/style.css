@@ -379,7 +379,7 @@ footer {
 }
 
 .partners {
-  background: url("../imgs/partners-bg3x.jpg");
+  background: url("../imgs/partners-bg3x.webp");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1568,6 +1568,9 @@ footer {
     width: 80%;
     font-size: 18px;
     height: auto;
+  }
+  #myVideo {
+    height: 100%;
   }
 }
 
