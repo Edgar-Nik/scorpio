@@ -110,6 +110,7 @@ footer {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  
 }
 .video-planet{
   width: 3rem;
@@ -151,10 +152,71 @@ footer {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  width: 90%;
+}
+.animation-change-text{
+  text-align: center;
+  visibility: hidden;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+  padding-right: .2rem;
+  /* border-right: 2px solid #fff; */
+}
+
+.animation-change-text-animate{
+  /* animation: typingAnimation .9s  infinite; */
+
+}
+@keyframes typingAnimation{
+  0%{
+    border-right: 2px solid  rgba(255, 255, 255, 1);
+  }
+  100%{
+    
+    border-right: 2px solid rgba(255, 255, 255, 0);
+  }
+}
+.animation-text-second{
+  font-size: 4rem;
+  color: #f274cc;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  transform: scale(0);
+  transition: all .5s ease-in;
+
+}
+.animation-text-opacity{
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  height: 1.8rem;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transition-delay: 1.5s;
+
+}
+.animation-text-second-animate{
+  transform: scale(1);
+
+}
+.animation-text-opacity-animate{
+  opacity: 1;
+
 }
 #myVideo {
   min-width: 100%;
   min-height: 100%;
+  pointer-events: none;
 }
 .who-we-are {
   position: relative;
@@ -1490,6 +1552,22 @@ footer {
     width: 9rem;
     margin-left: -1rem;
     margin-right: 0;
+  }
+ 
+  .animation-change-text{
+    font-size: 18px;
+    height: auto;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+  }
+  .animation-text-second {
+    font-size: 50px;
+    margin-bottom: 1rem;
+  }
+  .animation-text-opacity{
+    width: 80%;
+    font-size: 18px;
+    height: auto;
   }
 }
 
