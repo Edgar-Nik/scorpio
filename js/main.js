@@ -23,3 +23,10 @@ if (document.querySelector(".video-planet")) {
     window.scrollTo(0,blockTop)
   })
 }
+
+let videoEnd = document.getElementById("myVideo");
+let loadBlock = document.getElementById("loading-cont"); 
+
+videoEnd.addEventListener('canplaythrough',()=>{
+  loadBlock.parentElement.removeChild(loadBlock)
+})
