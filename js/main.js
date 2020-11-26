@@ -1,10 +1,3 @@
-
-let loadBlock = document.getElementById('loading-cont')
-
-window.addEventListener('load', (event) => {
-  loadBlock.parentElement.removeChild(loadBlock)
-});
-
 $(document).ready(function () {
   $("#partners-slider").slick({
     slidesToShow: 4,
