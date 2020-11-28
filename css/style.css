@@ -19,7 +19,7 @@ body{
 }
 header {
   width: 100%;
-  height: 4.125rem;
+  height: 4.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,11 +29,11 @@ header {
   z-index: 100;
 }
 .logo-link {
-  margin-left: 1.875rem;
+  margin-left: 2.1%;
   transition: all 0.3s ease-in;
 }
 .menu-burger {
-  margin-right: 1.875rem;
+  margin-right: 2.1%;
   width: 1.88rem;
   cursor: pointer;
 }
@@ -259,14 +259,55 @@ footer {
     -ms-transform: translate3d(0px, 0px, 0);
   }
 }
+.austronautOffer{
+  position: absolute;
+  left: -3rem;
+  top: 7.75rem;
+  width: 21.7rem;
+  height: 27.9rem;
+  animation: austronautFly2 150s linear infinite;
+  z-index: 1;
+}
+.austronautOffer img{
+  width: 100%;
+  height: 100%;
+}
 .austronaut {
   position: absolute;
   right: -3rem;
   top: 7.75rem;
   width: 21.7rem;
   height: 27.9rem;
-  animation: bounceA 6s linear infinite;
-  z-index: 99;
+  animation: austronautFly 150s linear infinite;
+  z-index: 1;
+}
+@keyframes austronautFly{
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  50%{
+    transform: translate3d(-100vw,20rem,10rem);
+
+  }
+  100%{
+    transform: translate3d(0,0,0);
+
+  }
+ 
+}
+@keyframes austronautFly2{
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  50%{
+    transform: translate3d(100vw,30rem,10rem);
+
+  }
+  100%{
+    transform: translate3d(0,0,0);
+
+  }
+ 
 }
 .austronaut_fixed {
   position: fixed;
@@ -338,6 +379,7 @@ footer {
   margin: 6.25rem auto;
   display: flex;
   align-items: center;
+  z-index: 20;
 }
 .team-pic {
   width: 29rem;
@@ -757,7 +799,7 @@ footer {
   transform: translateX(130%);
   -webkit-transform: translateX(130%);
   -ms-transform: translateX(130%);
-  transition: all 0.3s ease-in;
+  transition: all 0.7s ease-in;
   background: #e4e4e4;
   z-index: 100;
 }
@@ -805,6 +847,12 @@ footer {
   color: #f274cc;
   margin: 6.25rem;
   width: auto;
+  letter-spacing: -1rem;
+  transition:  letter-spacing .8s ease-in;
+  transition-delay: .5s;
+}
+.active-menu .menu-sections a{
+  letter-spacing: normal;
 }
 
 .menu-sections a:hover {
@@ -868,15 +916,15 @@ footer {
   left: -5.2rem;
   opacity: 0;
   transition: all 0.6s ease-in;
-  transform: translateX(-10rem) scale(0.5);
-  -webkit-transform:translateX(-10rem) scale(0.5);
-  -ms-transform:translateX(-10rem) scale(0.5);
+  transform: translateX(-10rem) ;
+  -webkit-transform:translateX(-10rem) ;
+  -ms-transform:translateX(-10rem) ;
 }
 .hello-text-svg_active {
   opacity: 1;
-  transform: translateX(0) scale(1);
-  -webkit-transform:translateX(0) scale(1);
-  -ms-transform:translateX(0) scale(1);
+  transform: translateX(0) ;
+  -webkit-transform:translateX(0);
+  -ms-transform:translateX(0) ;
 }
 .hello-text-svg img {
   width: 100%;
@@ -995,6 +1043,7 @@ footer {
   width: 100%;
   min-height: 100vh;
   padding-bottom: 7rem;
+  overflow: hidden;
 }
 .what-we-offer-top-heading{
   color: #fff;
@@ -1037,7 +1086,7 @@ footer {
 }
 .offer-circle {
   position: absolute;
-  z-index: -1;
+  z-index: 14;
   left: 0;
   top: 15rem;
   height: 50rem;
@@ -1053,6 +1102,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 20;
 }
 .offer-text-wrapper {
   display: flex;
@@ -1074,7 +1124,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 3.6rem;
-  transition: all 0.3s ease-in;
+  transition: .1s ease-out;
 }
 
 .offer-heading {
@@ -1487,6 +1537,9 @@ footer {
 
 
   }
+  .austronautOffer{
+    display: none;
+  }
   .offer-text-wrapper{
     margin-left: 0;
   }
@@ -1571,6 +1624,13 @@ footer {
   }
   #myVideo {
     height: 100%;
+  }
+  
+  .mobile-head-bg{
+    background: #020611;
+  }
+  .active-menu .mobile-head-bg{
+    background: transparent;
   }
 }
 
@@ -1666,7 +1726,7 @@ footer {
   left: 0;
   transform: translateY(-130%);
 
-  transition: all 1s ease-in-out;
+  transition: all 1.3s ease-in-out;
   background: #000;
 z-index: 50;
 }
@@ -1678,7 +1738,7 @@ z-index: 50;
   right: 0;
   transform: translateY(130%);
  
-  transition: all 1s ease-in-out;
+  transition: all 1.3s ease-in-out;
   background: #000;
   z-index: 50;
 

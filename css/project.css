@@ -80,12 +80,46 @@
   margin-bottom: 1rem;
 }
 .other-projects {
-  width: 100%;
+  width: 90%;
   position: relative;
   height: 18rem;
   display: flex;
   background: #020611;
   justify-content: center;
+  margin: 0 auto;
+}
+.other-projects .slick-next{
+  right: -4rem !important;
+}
+.other-projects .slick-prev{
+  display: inline-block !important;
+  width: 3.4rem !important;
+    height: 1.4rem !important;
+    background-image: url(../imgs/arrow-back.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 0.3s;
+    left: -4rem !important;
+}
+.other-projects .slick-prev:hover{
+  background-image: url(../imgs/arrow-back.svg) !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate(0, -50%) scaleX(0.7);
+    -webkit-transform: translate(0, -50%) scaleX(0.7);
+    -ms-transform: translate(0, -50%) scaleX(0.7);
+    filter: brightness(0) invert(1);
+}
+
+.other-projects .slick-prev::before{
+  display: none !important;
+}
+.portfolio-section-inner a{
+  width: 100%;
+  height: 100%;
+  
 }
 .backBtn {
   position: absolute;
@@ -200,5 +234,11 @@
   }
   .portfolio-section-inner:hover {
     border: none;
+  }
+  .other-projects .slick-next{
+    display: none !important;
+  }
+  .other-projects .slick-prev{
+    display: none !important;
   }
 }

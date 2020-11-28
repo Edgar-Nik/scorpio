@@ -5,8 +5,8 @@ window.addEventListener('scroll',()=>{
        
         document.querySelector('.hello-text-svg').classList.add('hello-text-svg_active')
 
-        document.querySelector('.austronaut').classList.add('austronaut_fixed')
+        // document.querySelector('.austronaut').classList.add('austronaut_fixed')
     }else{
-        document.querySelector('.austronaut').classList.remove('austronaut_fixed')
+        // document.querySelector('.austronaut').classList.remove('austronaut_fixed')
     }
 })
