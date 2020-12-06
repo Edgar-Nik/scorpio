@@ -39,7 +39,6 @@ video.addEventListener("ended", () => {
   newField.classList.add('animation-change-text')
   
   newElem.classList.add('showVideo_text')
-  
   container.appendChild(newElem)
   newElem.appendChild(newField)
 
@@ -50,12 +49,12 @@ video.addEventListener("ended", () => {
   let lastField = document.createElement('p')
   lastField.classList.add('animation-text-opacity')
   newElem.appendChild(lastField)
-  lastField.innerHTML='We are here to change that reality'
+  lastField.innerHTML='WE ARE HERE TO CHANGE THAT REALITY'
   homeAnim(newField,secondField,lastField)
  
   setTimeout(()=>{
 
     startVideo(container,newElem)
-  },20000)
+  },10000)
  
 });

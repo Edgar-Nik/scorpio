@@ -24,7 +24,7 @@ body{
   top: 0;
   left: 0;
   z-index: 50;
-  background:rgba(0, 0, 0, 0.8);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +32,18 @@ body{
   color: #fff;
   font-weight: bold;
   font-size: 1.2rem;
+  animation: .4s  showVideo_text-anim ;
+  background:rgba(0, 0, 0, 0.918);
+
+}
+@keyframes showVideo_text-anim{
+ 0%{
+  background:rgba(0, 0, 0, 0.075);
+ }
+ 100%{
+  background:rgba(0, 0, 0, 0.918);
+ }
+
 }
 header {
   width: 100%;
@@ -187,6 +199,8 @@ footer {
   height: 2rem;
   margin-bottom: 2rem;
   padding-right: .2rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: .05rem;
   /* border-right: 2px solid #fff; */
 }
 
@@ -211,6 +225,7 @@ footer {
   margin-bottom: 2rem;
   transform: scale(0);
   transition: all .5s ease-in;
+  font-family: 'Bungee Inline', cursive;
 
 }
 .animation-text-opacity{
@@ -222,6 +237,10 @@ footer {
   opacity: 0;
   transition: all 1s ease-in-out;
   transition-delay: 1.5s;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: .05rem;
+
+
 
 }
 .animation-text-second-animate{
@@ -1627,22 +1646,29 @@ footer {
   }
  
   .animation-change-text{
-    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
     height: auto;
     line-height: 24px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Bebas Neue', cursive;
+
   }
   .animation-text-second {
-    font-size: 50px;
+    font-size: 56px;
     margin-bottom: 1rem;
   }
   .animation-text-opacity{
     width: 80%;
-    font-size: 18px;
+    font-size: 20px;
     height: auto;
+    letter-spacing: 2px;
   }
   #myVideo {
     height: 100%;
+    min-width: unset;
   }
   
   .mobile-head-bg{
