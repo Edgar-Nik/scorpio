@@ -122,6 +122,7 @@ body {
   min-height: 100vh;
   margin-left: 2rem;
   margin-top: 6.25rem;
+  padding-bottom: 3rem;
 }
 .staff-column {
   width: 45%;

@@ -153,6 +153,7 @@ footer {
   -ms-transform: translate(-50%,0);
   animation: bounceVid 2s linear infinite;
   cursor: pointer;
+  z-index: 55;
 
 }
 @keyframes bounceVid {
@@ -837,7 +838,7 @@ footer {
   transform: translateX(130%);
   -webkit-transform: translateX(130%);
   -ms-transform: translateX(130%);
-  transition: all 0.7s ease-in;
+  transition: all 1s cubic-bezier(0.44, -0.2, 0.54, 1.01);
   background: #e4e4e4;
   z-index: 100;
 }
@@ -879,15 +880,33 @@ footer {
   width: 90%;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .menu-sections a {
   text-decoration: none;
   color: #f274cc;
   margin: 6.25rem;
   width: auto;
-  letter-spacing: -1rem;
+  /* letter-spacing: -1rem;
   transition:  letter-spacing .8s ease-in;
-  transition-delay: .5s;
+  transition-delay: .5s; */
+}
+.ml12_1,
+.ml12_2,
+.ml12 {
+  font-weight: 200;
+  /* font-size: 1.6em; */
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+.ml12_1 .letter,
+.ml12_2 .letter,
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.active-menu .menu-sections{
+  opacity: 1;
 }
 .active-menu .menu-sections a{
   letter-spacing: normal;
@@ -1045,6 +1064,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .planet-small > img {
   position: absolute;
   width: 100%;
@@ -1082,6 +1102,10 @@ footer {
   min-height: 100vh;
   padding-bottom: 7rem;
   overflow: hidden;
+  background: url('../imgs/offer-space.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .what-we-offer-top-heading{
   color: #fff;
@@ -1105,9 +1129,11 @@ footer {
   position: relative;
 }
 .offer-bg {
+
   position: absolute;
-  width: 90%;
-  height: 80%;
+  min-width:100%;
+  height: 100%;
+ overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1282,6 +1308,19 @@ footer {
 }
 .menu-bg>img{
   width: 100%;
+}
+.ml13_1,
+.ml13_2,
+.ml13 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.ml13_1 .letter,
+.ml13_2 .letter,
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1.8rem;
 }
 @media screen and (max-width: 480px) {
   :root {
@@ -1677,6 +1716,22 @@ footer {
   .active-menu .mobile-head-bg{
     background: transparent;
   }
+
+.ml13 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.ml13_1{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.ml13_2{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 }
 
 
@@ -1797,4 +1852,38 @@ z-index: 50;
  
   transform: translateY(0);
 
+}
+.animated-texts-wrap p{
+  margin-bottom: 2rem;
+}
+
+.animated-texts-wrap{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  justify-content:center;
+  align-items: center;
+  color:#fff;
+  font-size: 2rem;
+  flex-direction: column;
+  background: url('../imgs/offer-space.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  
+  animation: .5s videoBlock_anim ease-in;
+
+}
+@keyframes videoBlock_anim{
+0%{
+  opacity: 0%;
+}
+100%{
+  opacity: 100%;
+}
 }
