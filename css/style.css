@@ -1102,10 +1102,10 @@ footer {
   min-height: 100vh;
   padding-bottom: 7rem;
   overflow: hidden;
-  background: url('../imgs/offer-space.webp');
+  /* background: url('../imgs/offer-space.webp');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .what-we-offer-top-heading{
   color: #fff;
@@ -1871,9 +1871,10 @@ z-index: 50;
   color:#fff;
   font-size: 2rem;
   flex-direction: column;
-  background: url('../imgs/offer-space.webp');
+  /* background: url('../imgs/offer-space.webp');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background: #020611;
   opacity: 1;
   
   animation: .5s videoBlock_anim ease-in;
